@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: gainsboro;
+  color: rgb(71, 71, 71);
 }
 
 p {

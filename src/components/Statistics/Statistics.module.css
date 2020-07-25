@@ -1,0 +1,32 @@
+.statistics {
+  width: 250px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid rgb(233, 232, 232);
+  border-radius: 3px;
+}
+
+.title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.statList {
+  display: flex;
+  font-weight: 600;
+}
+
+.item {
+  display: inline-flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+  width: -webkit-fill-available;
+  color: snow;
+  height: auto;
+}

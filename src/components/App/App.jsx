@@ -1,7 +1,9 @@
 import React from "react";
 import "./App.module.css";
 import Profile from "../Profile/Profile";
+import Statistics from "../Statistics/Statistics";
 import user from "../../user.json";
+import statisticalData from "../../statistical-data.json";
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
         stats={user.stats}
         // СИЛЬНЫЕ СОМНЕНИЯ НАСЧЕТ ЗАПИСИ stats={user.stats}
       />
-      ,
+
+      <Statistics title="Upload stats" stats={statisticalData} />
     </div>
   );
 }
