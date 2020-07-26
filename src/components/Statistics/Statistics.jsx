@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import RandomColor from "./RandomColor";
-// import statisticalData from "../../statistical-data.json";
 import styles from "./Statistics.module.css";
 
 // ВЫЧИСЛЯЕМАЯ ШИРИНА ДЛЯ ЭЛЕМЕНТОВ СПИСКА - ЧТО НЕ ТАК С ВЫРАЖЕНИЕМ ???
