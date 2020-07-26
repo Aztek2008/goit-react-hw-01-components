@@ -4,9 +4,7 @@ import RandomColor from "./RandomColor";
 // import statisticalData from "../../statistical-data.json";
 import styles from "./Statistics.module.css";
 
-console.log("statisticalData", RandomColor());
-
-// ВЫЧИСЛЯЕМАЯ ШИРИНА ДЛЯ ЭЛЕМЕНТОВ СПИСКА - ЧТО НЕ ТАК С ВЫРАЖЕНИЕМ??
+// ВЫЧИСЛЯЕМАЯ ШИРИНА ДЛЯ ЭЛЕМЕНТОВ СПИСКА - ЧТО НЕ ТАК С ВЫРАЖЕНИЕМ ???
 // const itemWidth = () => {calc( 100% / statisticalData.length )};
 
 function Statistics({ title, stats }) {

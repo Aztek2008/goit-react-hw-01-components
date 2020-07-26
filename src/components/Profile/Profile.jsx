@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import user from "../../user.json";
+import user from "../../api-json/user.json";
 import styles from "./Profile.module.css";
 
 // СИЛЬНЫЕ СОМНЕНИЯ НАСЧЕТ ПРОПСА stats

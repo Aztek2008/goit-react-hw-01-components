@@ -1,0 +1,25 @@
+.friendList {
+  width: 250px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.friendListitem {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e9e8e8;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+.friendListitem > * {
+  margin-right: 10px;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+}
