@@ -1,31 +1,30 @@
 import React from "react";
 import PropTypes from "prop-types";
 import user from "../../api-json/user.json";
-import styles from "./Profile.module.css";
+import * as s from "./Profile.module.css";
 
-// СИЛЬНЫЕ СОМНЕНИЯ НАСЧЕТ ПРОПСА stats
-function Profile({ name, tag, location, avatar, stats }) {
+function Profile({ name, tag, location, avatar }) {
   return (
-    <div className={styles.profile}>
-      <div className={styles.description}>
-        <img src={avatar} alt="user avatar" className={styles.avatar} />
-        <p className={styles.name}>{name}</p>
-        <p className={styles.tag}>@{tag}</p>
-        <p className={styles.location}>{location}</p>
+    <div className={s.profile}>
+      <div className={s.description}>
+        <img src={avatar} alt="user avatar" className={s.avatar} />
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
-      <ul className={styles.stats}>
-        <li className={styles.statsItem}>
-          <span className={styles.label}>Followers</span>
-          <span className={styles.quantity}>{user.stats.followers}</span>
+      <ul className={s.stats}>
+        <li className={s.statsItem}>
+          <span className={s.label}>Followers</span>
+          <span className={s.quantity}>{user.stats.followers}</span>
         </li>
-        <li className={styles.statsItem}>
-          <span className={styles.label}>Views</span>
-          <span className={styles.quantity}>{user.stats.likes}</span>
+        <li className={s.statsItem}>
+          <span className={s.label}>Views</span>
+          <span className={s.quantity}>{user.stats.likes}</span>
         </li>
-        <li className={styles.statsItem}>
-          <span className={styles.label}>Likes</span>
-          <span className={styles.quantity}>{user.stats.views}</span>
+        <li className={s.statsItem}>
+          <span className={s.label}>Likes</span>
+          <span className={s.quantity}>{user.stats.views}</span>
         </li>
       </ul>
     </div>
