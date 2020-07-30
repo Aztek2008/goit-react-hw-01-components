@@ -5,9 +5,8 @@ import styles from "./FriendList.module.css";
 const offlineColor = "#d16350";
 const onlineColor = "#3b9a59";
 
-function FriendLi({ avatar, id, isOnline, name }) {
-  console.log("PROPS: ", avatar, id, isOnline, name);
-
+function FriendLi({ avatar, id, name, isOnline }) {
+  console.log("PROPS IN FRIEND LI: ", avatar, name, isOnline, id);
   return (
     <li key={id} className={styles.friendListitem}>
       <span
@@ -29,7 +28,7 @@ FriendLi.defaultProps = {
 
 FriendLi.propTypes = {
   avatar: PropTypes.string,
-  id: PropTypes.number.isRequired, // UNDEFINED !
+  id: PropTypes.number.isRequired,
   isOnline: PropTypes.bool.isRequired,
   name: PropTypes.string.isRequired,
 };

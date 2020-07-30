@@ -21,7 +21,6 @@ function App() {
         location="Salvador, Brasil"
         avatar="https://i.pinimg.com/originals/a0/40/66/a04066a2d1fcf25df39c599e093995c8.jpg"
         stats={{ user }}
-        // ПРАВИЛЬНО ТУТ ?
       />
 
       <Statistics title="Upload stats" stats={statisticalData} />

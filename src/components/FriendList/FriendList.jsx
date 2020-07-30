@@ -10,9 +10,9 @@ function FriendList({ friends }) {
     <ul className={styles.friendList}>
       {friends.map((friend) => (
         <FriendLi
-          key={friend.id}
+          id={friend.id}
           isOnline={friend.isOnline}
-          src={friend.avatar} // НЕ РЕНДЕРИТСЯ КАРТИНКА В DOM !
+          avatar={friend.avatar}
           alt={friend.name}
           width="48"
           name={friend.name}
@@ -34,49 +34,3 @@ FriendList.propTypes = {
 };
 
 export default FriendList;
-
-//
-//
-//===============================================================
-// function FriendList({ friends }) {
-//   const onlineColor = "#3b9a59";
-//   const offlineColor = "#d16350";
-//   return (
-//     <ul className={styles.friendList}>
-//       {friends.map((friend) => (
-//         <li key={friend.id} className={styles.friendListitem}>
-//           <span
-//             className={styles.status}
-//             style={
-//               friend.isOnline
-//                 ? { background: onlineColor }
-//                 : { background: offlineColor }
-//             }
-//           ></span>
-//           <img
-//             className="avatar"
-//             src={friend.avatar}
-//             alt={friend.name}
-//             width="48"
-//           />
-//           <p className="name">{friend.name}</p>
-//         </li>
-//       ))}
-//     </ul>
-//   );
-// }
-// FriendList.defaultProps = {
-//   avatar:
-//     "https://icon-library.net//images/profile-image-icon/profile-image-icon-0.jpg",
-// };
-// FriendList.propTypes = {
-//   friends: PropTypes.arrayOf(
-//     PropTypes.exact({
-//       avatar: PropTypes.string,
-//       id: PropTypes.number.isRequired,
-//       isOnline: PropTypes.bool.isRequired,
-//       name: PropTypes.string.isRequired,
-//     })
-//   ),
-// };
-// export default FriendList;

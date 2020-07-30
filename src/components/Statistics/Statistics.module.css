@@ -26,7 +26,8 @@
   align-items: center;
   padding: 10px;
   font-size: 14px;
-  width: -webkit-fill-available;
+  width: calc(100% / 5);
+  /* width: -webkit-fill-available; */
   color: snow;
   height: auto;
 }
