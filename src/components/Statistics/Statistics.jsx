@@ -12,7 +12,7 @@ function Statistics({ title, stats }) {
       <ul className={styles.statList}>
         {stats.map((stat) => (
           <StatLi
-            id={stat.id}
+            key={stat.id}
             label={stat.label}
             percentage={stat.percentage}
           />

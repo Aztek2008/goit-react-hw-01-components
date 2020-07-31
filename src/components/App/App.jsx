@@ -9,9 +9,6 @@ import statisticalData from "../../api-json/statistical-data.json";
 import friends from "../../api-json/friends.json";
 import transactions from "../../api-json/transactions.json";
 
-console.log("friends: ", friends);
-console.log("statisticalData:", statisticalData);
-
 function App() {
   return (
     <div className="App">
